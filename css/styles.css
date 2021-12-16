@@ -18,11 +18,14 @@ width=1px height=1px  */
   --primary-white-color: #fff;
   --secondary-white-color: #f5f4fa;
   --footer-section-color: #2f303a;
+  --workers-section-color: #f5f4fa;
+  --lower-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
+
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 }
@@ -59,6 +62,7 @@ body {
 /* Contacts */
 .contacts .link {
   color: currentColor;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -78,6 +82,7 @@ body {
 /* Оформление героя */
 .hero-title {
   color: var(--header-text-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -88,6 +93,7 @@ body {
 /* Оформление секций  */
 .section-title {
   color: var(--header-text-color);
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -96,6 +102,7 @@ body {
 /* Качества */
 .qualities .title {
   color: var(--header-text-color);
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -110,10 +117,11 @@ body {
 
 /* Сотрудники */
 .workers-section {
-  background-color: #f5f4fa;
+  background-color: var(--workers-section-color);
 }
 .workers .title {
   color: var(--header-text-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -160,7 +168,7 @@ body {
 }
 
 .lower-contacts .link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--lower-contacts-color);
 
   font-size: 14px;
   line-height: 1.71;
@@ -171,8 +179,8 @@ body {
 .select-button {
   color: var(--header-text-color);
   background-color: var(--secondary-white-color);
-  font-family: Roboto, sans-serif;
 
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
