@@ -1,0 +1,204 @@
+/* основний колір тексту #212121; */
+/* додатковий колір підписів #757575; */
+/* колір логотипу #2196F3; та колір при наведенні */
+/* колір контактів почти та телефону в футері rgba(255, 255, 255, 0.6); */
+/* колір адреси просто ффффф 
++колір аш1 та надпису на кнопці*/
+/* колір хедера ффффф */
+/* колір головної заливки + футер  #2F303A; */
+/*  колір секції робіт та чеснот #E5E5E5; */
+/* колір бекграунду працівників #F5F4FA */
+
+/* скрыть элемент:opaccity=0 hidden=overflow
+width=1px height=1px  */
+:root {
+  --header-text-color: #212121;
+  --hover-text-color: #2196f3;
+  --primary-text-color: #757575;
+  --primary-white-color: #fff;
+  --secondary-white-color: #f5f4fa;
+  --footer-section-color: #2f303a;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Оформление хедера */
+/* Logo */
+.logo,
+.link {
+  color: var(--header-text-color);
+}
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-part {
+  color: var(--hover-text-color);
+}
+/* Nav */
+.references .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.references .link:hover,
+.references .link:focus {
+  color: var(--hover-text-color);
+}
+.references .link.current {
+  color: var(--hover-text-color);
+}
+/* Contacts */
+.contacts .link {
+  color: currentColor;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts .link:hover,
+.contacts .link:focus,
+.lower-contacts .link:hover,
+.lower-contacts .link:focus {
+  color: var(--hover-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* Оформление героя */
+.hero-title {
+  color: var(--header-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* Оформление секций  */
+.section-title {
+  color: var(--header-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* Качества */
+.qualities .title {
+  color: var(--header-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.qualities .description {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* Технологии */
+
+/* Сотрудники */
+.workers-section {
+  background-color: #f5f4fa;
+}
+.workers .title {
+  color: var(--header-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.workers .description {
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+}
+/* Кнопка */
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--hover-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--footer-section-color);
+}
+.footer-logo {
+  color: var(--primary-white-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.location {
+  color: var(--primary-white-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.lower-contacts .link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Страница Портфолио*/
+/* Кнопки */
+.select-button {
+  color: var(--header-text-color);
+  background-color: var(--secondary-white-color);
+  font-family: Roboto, sans-serif;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  cursor: pointer;
+}
+.select-button:hover,
+.select-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--hover-text-color);
+}
+
+/* Примеры работ */
+.labors .title {
+  color: var(--header-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.labors .description {
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
