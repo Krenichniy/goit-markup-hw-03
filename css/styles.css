@@ -166,7 +166,6 @@ header {
 }
 /* Кнопка */
 .button {
-  display: inline-block;
   min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
@@ -215,7 +214,6 @@ header {
 /* Страница Портфолио*/
 /* Кнопки */
 .select-button {
-  display: inline-block;
   border-radius: 4px;
   padding: 6px 22px;
   border: 1px solid transparent;
