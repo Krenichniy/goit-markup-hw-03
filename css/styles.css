@@ -31,12 +31,18 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+}
+
 /* Оформление хедера */
 header {
-  /* width: 1300px; */
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid red;
@@ -87,20 +93,28 @@ header {
 
 .list {
   padding: 0;
-  list-style: none;
   margin: 0;
+  list-style: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Оформление героя */
 .hero {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 200px 15px;
+
   text-align: center;
   outline: 2px solid red;
-  width: 1230px;
-  margin: 0 auto;
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+
   color: var(--header-text-color);
 
   font-weight: 900;
@@ -114,6 +128,7 @@ header {
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
+
   color: var(--header-text-color);
 
   font-weight: 700;
@@ -122,9 +137,13 @@ header {
   text-align: center;
 }
 /* Качества */
+.qualities {
+  margin-bottom: 94px;
+}
 .qualities .title {
   margin-top: 0;
   margin-bottom: 10px;
+
   color: var(--header-text-color);
 
   font-weight: 700;
@@ -144,10 +163,13 @@ header {
 
 /* Сотрудники */
 .workers-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--workers-section-color);
 }
 .workers .title {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
 
   color: var(--header-text-color);
@@ -160,9 +182,15 @@ header {
 
 .workers .description {
   margin: 0;
+  margin-bottom: 0;
+
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
+}
+
+.workers-item {
+  padding: 30px 0;
 }
 /* Кнопка */
 .button {
@@ -239,8 +267,11 @@ header {
 .portfolio {
   background-color: var(--portfolio-section-color);
 }
+.buttons {
+  margin-bottom: 50px;
+}
 .labors .title {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 4px;
 
   color: var(--header-text-color);
@@ -259,4 +290,7 @@ header {
 
   font-size: 16px;
   line-height: 1.87;
+}
+.labors-item {
+  padding: 20px 0;
 }
