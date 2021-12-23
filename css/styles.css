@@ -35,8 +35,7 @@ img {
 }
 
 /* Оформление хедера */
-header {
-}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -147,6 +146,8 @@ header {
 
 /* Оформление героя */
 .hero {
+  background-color: var(--footer-section-color);
+
   width: 1200px;
   margin: 0 auto;
   padding: 200px 15px;
@@ -157,7 +158,7 @@ header {
   margin-top: 0;
   margin-bottom: 30px;
 
-  color: var(--header-text-color);
+  color: var(--primary-white-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -239,6 +240,11 @@ header {
 .workers-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
+
+  background-color: var(--primary-white-color);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .workers-block .title {
@@ -282,6 +288,11 @@ header {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
 }
 
 /* Footer */
