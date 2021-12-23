@@ -20,7 +20,6 @@ width=1px height=1px  */
   --footer-section-color: #2f303a;
   --workers-section-color: #f5f4fa;
   --lower-contacts-color: rgba(255, 255, 255, 0.6);
-  --portfolio-section-color: #e5e5e5;
 }
 
 body {
@@ -37,24 +36,32 @@ img {
 
 /* Оформление хедера */
 header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid var(--secondary-white-color);
 }
 .container {
   width: 1200px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
 }
 /* Logo */
 .logo,
+.references-link,
 .link {
   color: var(--header-text-color);
 
   text-decoration: none;
 }
 .logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -64,22 +71,49 @@ header {
   color: var(--hover-text-color);
 }
 /* Nav */
-.references .link {
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.references {
+  display: flex;
+}
+
+.references-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.references .link:hover,
-.references .link:focus {
+.references-link:hover,
+.references-link:focus {
   color: var(--hover-text-color);
 }
-.references .link.current {
+.references-link.current {
   color: var(--hover-text-color);
 }
+
+.references-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 /* Contacts */
+.contacts {
+  display: flex;
+}
+.header-connect {
+  margin-left: auto;
+}
 .contacts .link {
   color: currentColor;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
@@ -89,6 +123,15 @@ header {
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--hover-text-color);
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .list {
@@ -109,7 +152,6 @@ header {
   padding: 200px 15px;
 
   text-align: center;
-  outline: 2px solid red;
 }
 .hero-title {
   margin-top: 0;
@@ -137,8 +179,20 @@ header {
   text-align: center;
 }
 /* Качества */
+
 .qualities {
   margin-bottom: 94px;
+}
+
+.qualities-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.qualities-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
 }
 .qualities .title {
   margin-top: 0;
@@ -168,14 +222,11 @@ header {
 }
 
 .technologies-item {
-  width: calc(100% / 3 - 30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
 }
 /* Сотрудники */
-.workers-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
+.workers {
   background-color: var(--workers-section-color);
 }
 
@@ -186,7 +237,7 @@ header {
 }
 
 .workers-item {
-  width: calc(100% / 4 - 30px);
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
 
@@ -237,6 +288,10 @@ header {
 .footer {
   background-color: var(--footer-section-color);
 }
+.footer-container {
+  padding: 60px 0;
+}
+
 .footer-logo {
   color: var(--primary-white-color);
 
@@ -249,6 +304,9 @@ header {
 .location {
   color: var(--primary-white-color);
 
+  margin-top: 20px;
+  margin-bottom: 9px;
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -259,6 +317,10 @@ header {
 
   font-size: 14px;
   line-height: 1.71;
+}
+
+.lower-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Страница Портфолио*/
@@ -287,11 +349,31 @@ header {
 
 /* Примеры работ */
 .portfolio {
-  background-color: var(--portfolio-section-color);
+  background-color: var(--primary-white-color);
 }
 .buttons {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
+
+.buttons-item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.labors {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.labors-part {
+  flex-basis: calc(100% / 9 -30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
 .labors .title {
   margin-top: 0;
   margin-bottom: 4px;
@@ -314,5 +396,23 @@ header {
   line-height: 1.87;
 }
 .labors-item {
-  padding: 20px 0;
+  padding: 20px 24px;
+  border-left: 1px solid var(--secondary-white-color);
+  border-right: 1px solid var(--secondary-white-color);
+  border-bottom: 1px solid var(--secondary-white-color);
+}
+
+/* Спрятанные элементы */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
