@@ -36,11 +36,13 @@ img {
 
 /* Оформление хедера */
 
+.header {
+  border-bottom: 1px solid var(--secondary-white-color);
+}
+
 .header-container {
   display: flex;
   align-items: center;
-
-  border-bottom: 1px solid var(--secondary-white-color);
 }
 .container {
   width: 1200px;
@@ -148,7 +150,7 @@ img {
 .hero {
   background-color: var(--footer-section-color);
 
-  width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 200px 15px;
 
